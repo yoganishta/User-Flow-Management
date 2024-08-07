@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       body{
+            background-color: aliceblue;
+            margin:0;
+            font-family: sans-serif;
+            color: rgb(141, 159, 173);
+            font-weight: 700;
+        }
+        .container
+        {
+            display:flex;
+        }
+        .left
+        {
+            height:1000px;
+            width:17%;
+            background-color: rgb(7, 26, 78);
+            position:fixed;
+            margin-top:40px;
+            border-radius:0px 30px;
+            float:left;
+            color:white;
+            text-align: center;
+        }
+        .left ul{
+            list-style-type: none;
+            text-align: justify;
+            padding-left: 0px;
+            padding-right: 30px;
+        }
+        .left li{
+            padding:20px;
+        }
+        
+        .left ul li:hover{
+            background-color: aliceblue;
+            color:rgb(7, 26, 78);
+            border-radius: 5px;
+
+        }
+        .left ul li:hover a{
+            background-color: aliceblue;
+            color:rgb(7, 26, 78) ;
+            border-radius: 5px;
+
+        }
+
+    
+       .left ul li a{
+        color:white ;
+        text-decoration: none;
+       }
+       
+       #center
+       {
+        margin-left:20%;
+        padding:20px;
+        border:1px solid rgb(218, 221, 223);
+        margin-top: 100px;
+        float:left;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgb(146, 144, 144);
+       }
+
+       #table
+       {
+        border:1px solid rgb(218, 221, 223);
+        border-collapse: collapse;
+        color:rgb(141, 159, 173);
+        padding:20px;
+       
+        width:1000px;
+
+         /* Rounded corners for the table */
+      
+       }
+       td,th{
+        border:1px solid rgb(210, 214, 218);
+        
+        padding:20px;
+        border-radius: 150px;
+
+       }
+       tr{
+        border-radius: 150px;
+
+       }
+       th{
+        color:rgb(7, 26, 78) ;
+        font-size: larger;
+
+       }
+       h2{
+        color:rgb(7, 26, 78) 
+
+       }
+       .left ul li:active a{
+            background-color: aliceblue;
+            color:rgb(7, 26, 78) ;
+            border-radius: 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="left">
+            <h1>Dashboard</h1>
+            <ul>
+                <li><a href="user_list.html">User List</a></li>
+                <li><a href="user_create.html">Create User</a></li>
+                <li><a href="user_edit.html">Edit user</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+    </div>
+    <div id="center">
+        <h1 style="color:rgb(7, 26, 78) ">User List</h1>
+        <table id="table">
+                
+        </table>
+    </div>
+</div>
+    <script src="user_list.js"></script>
+</body>
+</html>
+
+
+
+
+    
+

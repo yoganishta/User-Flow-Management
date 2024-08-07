@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+               body{
+            background-color: aliceblue;
+            margin:0;
+            font-family: sans-serif;
+            color: rgb(141, 159, 173);
+            font-weight: 700;
+        }
+        .login {
+            border: 2px solid black;
+            margin-top: 25%;
+            margin-left: 50%;
+            transform: translate(-50%, -50%);
+            height: max-content;
+            width: 20%;
+            padding: 2%;
+            background-color: rgb(7, 26, 78);
+            color:white;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        input {
+            width: 98%;
+            border: 1px solid black;
+            padding:5px;
+            border-radius: 5px;
+        }
+        h2, p {
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 5px;
+            padding-right: 10px;
+        }
+        .invalid {
+            color: red;
+            text-align: center;
+        }
+        a:hover{
+            font-size: large;
+            color: orangered;
+
+        }
+        a{
+            color: aliceblue;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        button{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <form id="form">
+            <label >Username</label>
+            <input type="text" id="name" required>
+            <label>Password</label>
+            <input type="password" id="password" required>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <p class="invalid"></p>
+        <p>Don't have an account? <a href="sign.html" id="sign">Sign Up</a></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
